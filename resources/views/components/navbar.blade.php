@@ -26,7 +26,7 @@
             </ul>
         </div>
         <div class="navbar-end">
-            <input type="text" placeholder="Cari Berita" class="input border-basse-200 w-24 md:w-auto bg-white text-black border-2" />
+            <input type="text" placeholder="Cari Berita" class="input border-base-100 w-24 md:w-auto bg-white text-black border-2" />
         </div>
     </div>
 </div>
@@ -37,7 +37,7 @@ function toggleMenu() {
     const iconHamburger = document.getElementById('icon-hamburger');
     const iconClose = document.getElementById('icon-close');
     const dropdownMenu = document.getElementById('dropdown-menu');
-    
+
     dropdownMenu.classList.toggle('hidden');
     iconHamburger.classList.toggle('hidden');
     iconClose.classList.toggle('hidden');

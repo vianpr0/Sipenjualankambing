@@ -1,4 +1,4 @@
-<div class="w-[90%] mx-auto p-2">
+<div class="w-[90%] mx-auto p-2 mt-10">
   <div class="container mx-auto flex items-center">
       <span class="font-bold mr-2 ">Breaking News:</span>
       <div class="overflow-hidden whitespace-nowrap">
