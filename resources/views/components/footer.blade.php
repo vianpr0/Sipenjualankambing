@@ -2,7 +2,7 @@
     <div class="mx-auto  px-4 sm:px-6 lg:px-8">
         <div class="border-b border-gray-200 pb-14 flex justify-between items-center flex-col gap-8 lg:gap-0 lg:flex-row">
             <div class="block">
-                <h3 class="font-manrope text-3xl text-gray-900 font-bold mb-2 text-center lg:text-left">Sign up to our webpage</h3>
+                <h3 class="font-manrope text-3xl text-gray-900 font-bold mb-2 text-center lg:text-left">Rilis </h3>
                 <p class="text-gray-500 text-center lg:text-left">Stay up to date with the latest update and announcement.</p>
             </div>
             <div class="flex items-center flex-col gap-4 lg:flex-row">
@@ -68,7 +68,7 @@
         <!--Grid-->
         <div class="py-7 border-t border-gray-200">
             <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-                <span class="text-sm text-gray-500 ">©<a href="https://pagedone.io/">Rilis ID</a>2024, All rights reserved.</span>
+                <span class="text-sm text-gray-500 ">©<a href="/">Rilis ID</a>2024, All rights reserved.</span>
                 <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
                     <a href="javascript:;"  class="w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-[#33CCFF] hover:bg-gray-900">
                       <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">

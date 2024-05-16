@@ -1,5 +1,5 @@
 <div class="">
-    <div class="navbar bg-sbase-100 md:w-[90%] mx-auto">
+    <div class="navbar bg-sbase-100 md:w-[90%S] mx-auto">
         <div class="navbar-start">
             <div class="dropdown">
                 <div id="menu-button" tabindex="0" role="button" class="btn btn-ghost lg:hidden" onclick="toggleMenu()">
@@ -16,13 +16,13 @@
                     <li class="w-fit p-2"><a>Subscribe</a></li>
                 </ul>
             </div>
-            <img class="w-24" src="https://lampung.rilis.id/image/logoRilislampung.png" alt="">
+            <a href="/"><img class="w-24" src="https://lampung.rilis.id/image/logoRilislampung.png" alt=""></a>
         </div>
         <div class="navbar-center hidden lg:flex text-black">
-            <ul class="menu menu-horizontal px-1 text-lg">
-                <li><a>Rilis Network</a></li>
-                <li><a>Index</a></li>
-                <li><a>Subscribe</a></li>
+            <ul class="menu menu-horizontal px-1 text-lg items-center gap-4">
+                <a href="/">Rilis Network</a>
+                <a href="/">Subscribe</a>
+                <a href="/index">Index</a>
             </ul>
         </div>
         <div class="navbar-end">
