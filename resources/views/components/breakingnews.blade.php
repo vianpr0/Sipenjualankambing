@@ -1,8 +1,8 @@
 <div class="w-[90S%] mx-auto p-2 mt-10">
   <div class="container mx-auto flex items-center">
-      <span class="font-bold mr-2 text-xl bg-psurple-400 p-4 tesxt-white border-y-2">Breaking News:</span>
-      <div class="overflow-hidden whitespace-nowrap">
-          <div class="inline-block animate-marquee text-xl font-bold bg-swhite border-y-2 p-4 bg-opacity-30">
+      <span class="font-bold mr-2 md:text-lg bg-psurple-400 p-4s tesxt-white border-y-2">Breaking</span>
+      <div class=" overflow-hidden whitespace-nowrap">
+          <div class="inline-block animate-marquee text-xl font-bold bg-swhite border-y-2 ps-4 bg-opacity-30">
               <span class="mr-10">Berita terbaru pertama...</span>
               <span class="mr-10">Berita terbaru kedua...</span>
               <span class="mr-10">Berita terbaru ketiga...</span>
