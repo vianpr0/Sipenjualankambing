@@ -10,6 +10,6 @@ Route::get('/' , [ArtikelLayout::class, 'index']);
 Route::get('/index' , [ArtikelLayout::class, 'post']);
 
 
-Route::fallback(function () {
-    return redirect('/');
+Route::get('/kategori' , function () {
+    return view('page.category');
 });
