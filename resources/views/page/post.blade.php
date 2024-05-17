@@ -1,32 +1,151 @@
-<x-app/>
+<x-layout>
+    <div class="container mx-auto py-3">
+        <div class="md:flex">
+            <div class="w-3/4 bgs-white p-2 shadow mr-8">
 
-<div class="md:w-[70%] mx-auto">
-    <x-Navbar />
+                <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-whsite dark:bg-gray-900 antialiased">
+                    <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+                        <article
+                            class="px-4 mx-auto max-w-screen-xl">
+                            <header class="mb-4 lg:mb-6 not-format">
+                                <address class="flex items-center mb-6 not-italic">
+                                    <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+                                        <img class="mr-4 w-16 h-16 rounded-full"
+                                            src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                                            alt="Jese Leos">
+                                        <div>
+                                            <a href="#" rel="author"
+                                                class="text-xl font-bold text-gray-900 dark:text-white">Jese Leos</a>
+                                            <p class="text-base text-gray-500 dark:text-gray-400">Graphic Designer,
+                                                educator & CEO Flowbite</p>
+                                            <p class="text-base text-gray-500 dark:text-gray-400"><time pubdate
+                                                    datetime="2022-02-08" title="February 8th, 2022">Feb. 8, 2022</time>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </address>
+                                <h1
+                                    class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+                                    Best practices for successful prototypes</h1>
+                            </header>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+                                quaerat odit earum nostrum voluptatibus recusandae commodi. Deserunt quo asperiores
+                                rerum fuga, nostrum tempora perspiciatis cumque, consequatur, ea iusto praesentium
+                                vero?.</p>
 
-        <div class="container mx-auto py-8">
-            <div class="md:flex">
-                <div class="w-3/4 bgs-white p-8 shadow mr-8">
-                    <h1 class="text-2xl font-bold mb-4">Title of the Blog Post</h1>
-                    <p class="text-gray-600 mb-4">Published on <span class="font-bold">May 16, 2024</span> by <span class="font-bold">John Doe</span></p>
-                    <img class="" src="https://lampung.rilis.id/image/2024/05/15bHKgKEH_andimahya.jpg" alt="Blog Post Image" class="mb-4">
-                    <p class="text-gray-800 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel mollis nunc. Nam ut dui fermentum, consequat tellus eget, efficitur nisi. Donec facilisis, ante id scelerisque commodo, urna dui volutpat felis, et tincidunt urna ante nec tellus. Ut eget ex ut orci dignissim tincidunt a vitae elit. Nam vel mi eleifend, feugiat odio eu, hendrerit quam. Etiam placerat mi in risus posuere, sed faucibus eros condimentum. Sed sodales elit sed mi eleifend, eu congue neque mattis. Morbi vitae felis ac felis sollicitudin vestibulum nec a orci. Morbi quis tellus mi. Maecenas efficitur dui ut purus molestie, nec pretium erat aliquet. Ut iaculis turpis eu metus semper, quis bibendum elit rhoncus. Praesent imperdiet, nibh eget vestibulum posuere, neque augue tempus mi, et rutrum nisi nunc nec libero. Mauris malesuada lacus non eleifend gravida.</p>
-                    <p class="text-gray-800 mb-4">Curabitur vel dolor eu dui pulvinar dignissim. Aenean eu lorem rutrum, finibus lectus ut, ullamcorper diam. Praesent vel nunc ac sem condimentum euismod. Nullam in justo ligula. Sed placerat blandit neque, quis lobortis elit dignissim eu. Phasellus efficitur gravida dui, eu auctor mi pretium nec. Nullam vulputate pulvinar dui, id faucibus nunc consequat et. Proin ut aliquam nunc. Proin euismod tempus libero, a consequat nulla mollis a. Aenean id efficitur nulla.</p>
-                    <blockquote class="border-l-4 border-blue-500 pl-4 mb-4 italic">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel mollis nunc."
-                    </blockquote>
-                    <p class="text-gray-800 mb-4">Vivamus rutrum libero a nisl aliquet, sit amet vehicula turpis pellentesque. Quisque sed odio vitae nulla ullamcorper sollicitudin. Nullam sed ligula ut tortor sagittis lacinia. Morbi nec elementum libero. Etiam eu ipsum sed est feugiat luctus. Vivamus ac quam non orci commodo condimentum. Praesent in augue vel justo faucibus commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse enim ex, venenatis in aliquet id, commodo vitae nunc. Morbi id dui eu ligula eleifend aliquam ac vel elit. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ultrices metus et odio tristique, sed pellentesque lectus rutrum.</p>
-                </div>
-                <div class="w-1/4 bg-whilte p-8 shadow">
-                    <h2 class="text-xl font-bold mb-4">Recent Posts</h2>
-                    <ul>
-                        <li class="text-blue-500 mb-2"><a href="#">Post 1</a></li>
-                        <li class="text-blue-500 mb-2"><a href="#">Post 2</a></li>
-                        <li class="text-blue-500 mb-2"><a href="#">Post 3</a></li>
-                        <li class="text-blue-500 mb-2"><a href="#">Post 4</a></li>
-                        <li class="text-blue-500 mb-2"><a href="#">Post 5</a></li>
-                    </ul>
-                </div>
+                            <figure><img
+                                    src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png"
+                                    alt="">
+                                <figcaption>Digital art by Anonymous</figcaption>
+                            </figure>
+
+                            <h3>Best practices for setting up your prototype</h3>
+                            <p><strong>Low fidelity or high fidelity?</strong> Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Unde saepe voluptatem perferendis. Tempora esse repudiandae nisi amet,
+                                tempore quaerat, facere corporis beatae ea nostrum cupiditate eum, sequi neque? Impedit,
+                                repudiandae.</p>
+                            <p><strong>Consider your user</strong>. To create an intuitive user flow, try to think as
+                                your user
+                                would when interacting with your product. While you can fine-tune this during beta
+                                testing,
+                                considering your user’s needs and habits early on will save you time by setting you on
+                                the right
+                                path.</p>
+                            <p><strong>Start from the inside out</strong>. A nice way to both organize your tasks and
+                                create more
+                                user-friendly prototypes is by building your prototypes ‘inside out’. Start by focusing
+                                on what will
+                                be important to your user, like a Buy now button or an image gallery, and list each
+                                element by order
+                                of priority. This way, you’ll be able to create a prototype that puts your users’ needs
+                                at the heart
+                                of your design.</p>
+                            <p>And there you have it! Everything you need to design and share prototypes — right in
+                                Flowbite Figma.
+                            </p>
+
+                        </article>
+                    </div>
+                </main>
+
+                <aside aria-label="Related articles" class="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
+                    <div class="px-4 mx-auto max-w-screen-xl">
+                        <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related articles</h2>
+                        <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                            <article class="max-w-xs">
+                                <a href="#">
+                                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png"
+                                        class="mb-5 rounded-lg" alt="Image 1">
+                                </a>
+                                <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                                    <a href="#">Our first office</a>
+                                </h2>
+                                <p class="mb-4 text-gray-500 dark:text-gray-400">Over the past year, Volosoft has
+                                    undergone many changes! After months of preparation.</p>
+                                <a href="#"
+                                    class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                                    Read in 2 minutes
+                                </a>
+                            </article>
+                            <article class="max-w-xs">
+                                <a href="#">
+                                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png"
+                                        class="mb-5 rounded-lg" alt="Image 2">
+                                </a>
+                                <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                                    <a href="#">Enterprise design tips</a>
+                                </h2>
+                                <p class="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has
+                                    undergone many changes! After months of preparation.</p>
+                                <a href="#"
+                                    class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                                    Read in 12 minutes
+                                </a>
+                            </article>
+                            <article class="max-w-xs">
+                                <a href="#">
+                                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png"
+                                        class="mb-5 rounded-lg" alt="Image 3">
+                                </a>
+                                <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                                    <a href="#">We partnered with Google</a>
+                                </h2>
+                                <p class="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has
+                                    undergone many changes! After months of preparation.</p>
+                                <a href="#"
+                                    class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                                    Read in 8 minutes
+                                </a>
+                            </article>
+                            <article class="max-w-xs">
+                                <a href="#">
+                                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png"
+                                        class="mb-5 rounded-lg" alt="Image 4">
+                                </a>
+                                <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
+                                    <a href="#">Our first project with React</a>
+                                </h2>
+                                <p class="mb-4  text-gray-500 dark:text-gray-400">Over the past year, Volosoft has
+                                    undergone many changes! After months of preparation.</p>
+                                <a href="#"
+                                    class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
+                                    Read in 4 minutes
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+
+
+
+            </div>
+            <div class="w-1/4 bg-whilte p-8 shadow">
+
+
+                    <img src="https://lampung.rilis.id/image/Iklan/2024/04/19rumahdijualaddnew2024add.jpg" alt="">
+
             </div>
         </div>
+    </div>
 
-    <x-footer />
+</x-layout>
