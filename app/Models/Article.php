@@ -11,11 +11,10 @@ use Carbon\Carbon;
 class Article extends Model
 {
     use HasFactory;
-
-    public static function find($article_id) {
+    public static function find($Url) {
         
-        $post = Arr::first(static::all(), function($post) use ($article_id) {
-            return $post['article_id'] == $article_id;
+        $post = Arr::first(static::all(), function($post) use ($Url) {
+            return $post['Url'] == $Url;
         });
         if (!$post) {
             abort(404);
@@ -23,16 +22,11 @@ class Article extends Model
         return $post;
     }   
 
-
     public function user()
     {
         return $this->belongsTo(User::class, 'penulis_ID', 'id');
     }
     public function scopeFilters($query, array $filter) {
-        if (isset($filter['search']) ? $filter['search'] : false) {
-            return $query->where('Nama_article', 'like', '%'. $filter['search']. '%');
-        }
-
         $query->when($filter['search'] ?? false, function ($query, $search) {
             return $query->where('Nama_article', 'like', '%'. $search. '%');
         });

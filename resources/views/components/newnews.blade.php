@@ -3,12 +3,12 @@
 
 
     <div class="">
-        <div class="grid  md:grid-cols-5 gap-2">
+        <div class="md:grid  md:grid-cols-5 gap-2 ">
             @foreach ($posts as $post)
-                <div class="card 2-fit rounded-none ">
-                    <figure><a href="/index/{{ $post['article_id'] }}"> <img class="h-32" src={{ $post->Image }}
+                <div class="card w-full rounded-none shadow-green-200 shadow-lg text-center ">
+                    <figure><a href="/index/{{ $post['article_id'] }}"> <img class="md:h-32" src={{ $post->Image }}
                                 alt="Shoes" /></figure>
-                    <div class="p-2">
+                    <div class="mt-2">
 
                         <p>{{ Str::limit($post->Nama_Article, 40) }}</p></a>
 
@@ -17,38 +17,7 @@
             @endforeach
         </div>
     </div>
-    <div x-data="{ currentSlide: 0 }" class="relative">
-        <div class="carousel carousel-end rounded-box overflow-hidden">
-            <div x-ref="carouselItems" class="carousel-item flex space-x-4" style="transform: translateX(-calc(100% * currentSlide))">
-                <!-- Card 1 -->
-                <div class="card bg-white rounded-lg shadow-md">
-                    <!-- Isi Card 1 -->
-                </div>
-                <!-- Card 2 -->
-                <div class="card bg-white rounded-lg shadow-md">
-                    <!-- Isi Card 2 -->
-                </div>
-                <!-- Card 3 -->
-                <div class="card bg-white rounded-lg shadow-md">
-                    <!-- Isi Card 3 -->
-                </div>
-                <!-- Card 4 -->
-                <div class="card bg-white rounded-lg shadow-md">
-                    <!-- Isi Card 4 -->
-                </div>
-                <!-- Card 5 -->
-                <div class="card bg-white rounded-lg shadow-md">
-                    <!-- Isi Card 5 -->
-                </div>
-            </div>
-        </div>
-        <button @click="currentSlide = Math.max(currentSlide - 1, 0)" class="btn btn-ghost absolute top-1/2 left-0 transform -translate-y-1/2">
-            <!-- Tombol navigasi ke kiri -->
-        </button>
-        <button @click="currentSlide = Math.min(currentSlide + 1, 4)" class="btn btn-ghost absolute top-1/2 right-0 transform -translate-y-1/2">
-            <!-- Tombol navigasi ke kanan -->
-        </button>
-    </div>
+    
     
     <script>
         // Panggil fungsi Alpine.js
