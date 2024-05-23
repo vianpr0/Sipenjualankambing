@@ -44,4 +44,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function aticle(){
+        return $this->hasMany(Article::class,  'id', 'penulis_ID');
+    }
 }

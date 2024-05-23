@@ -1,6 +1,7 @@
 <!-- resources/views/categories/index.blade.php -->
-<x-layout :title="'Kategori dan Artikel'">
-    <div class="flex">
+<x-layout>
+    <x-slot:title>{{ $title }}</x-slot:title>
+    <div class="flex mt-10">
         <!-- Kategori -->
         <div class="w-1/4 bg-white p-4 border-r border-gray-200 h-screen overflow-y-auto">
 
@@ -9,7 +10,7 @@
                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Kategori 2</a></li>
                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Kategori 3</a></li>
                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Kategori 4</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Kategori 5</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Lorem </a></li>
             </ul>
         </div>
         <!-- Artikel -->
