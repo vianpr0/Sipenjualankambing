@@ -28,10 +28,10 @@
                                 {{-- <p>{{ $post['Isi_Article'] }}</p> --}}
                                 {{-- <p>{!! Str::limit($post['Isi_Article'], 100) !!}</p> --}}
                                 {{-- <a href="/index/{{ $post['article_id'] }}">read more</a> --}}
-                                <div class="container my-4 mx-auto md:px-6">
+                                <div class="container my-4 mx-auto md:px-6">    
                                     <!-- Section: Design Block -->
                                     <section class="mb-32 text-center md:text-left">
-                                        <h2 class="mb-12 text-center text-3xl font-bold">Berita Terbaru</h2>
+                                    
                                         @foreach ($posts as $post)
                                             <div class="mb-6 flex flex-wrap">
                                                 <div class="mb-6 ml-auto w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-3/12">

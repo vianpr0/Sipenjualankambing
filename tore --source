@@ -1,0 +1,84 @@
+[33mcommit 2ca03b49ce3c62eb9b8b6e6a14e30fa10869bc03[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 3951e41 9519323
+Author: iyos sianipar <your_email@example.com>
+Date:   Thu May 23 10:58:13 2024 +0700
+
+    Merge branch 'main' of https://github.com/vianpr0/Sipenjualankambing
+
+[33mcommit 9519323172dddd433f16a44a69b5e18fabb44d4e[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Yos Sianipar <91314790+vianpr0@users.noreply.github.com>
+Date:   Thu May 23 10:57:36 2024 +0700
+
+    Delete app directory
+
+[33mcommit 3951e4193c350cad1ba5659b20059f4e8f83f95d[m
+Author: iyos sianipar <your_email@example.com>
+Date:   Thu May 23 10:54:05 2024 +0700
+
+    update ui databaseA
+
+[33mcommit ecc4db83249865fd34a6c968548e05934a5b80cd[m
+Author: Yos Sianipar <91314790+vianpr0@users.noreply.github.com>
+Date:   Thu May 23 10:47:42 2024 +0700
+
+    Add files via upload
+
+[33mcommit 91eda8a3758123ca4a435b298931d9287ae1798c[m
+Author: iyos sianipar <your_email@example.com>
+Date:   Thu May 23 09:38:20 2024 +0700
+
+    update ui database
+
+[33mcommit 39288cdaf5ee1ed8e855eb69ad9b0c8357a98c54[m
+Author: unknown <labkomunila2024@gmail.com>
+Date:   Fri May 17 09:41:34 2024 +0700
+
+    update 3aa
+
+[33mcommit b9e3bbfd5ad4659ca6c7f5f537fb5d33858db831[m
+Author: iyos sianipar <your_email@example.com>
+Date:   Fri May 17 08:19:10 2024 +0700
+
+    update 3b
+
+[33mcommit b2aa8c3943f84ac86668967ea8ac76f11b87ca80[m
+Author: unknown <labkomunila2024@gmail.com>
+Date:   Fri May 17 08:10:24 2024 +0700
+
+    update 3a
+
+[33mcommit 85d3a0b1b8d0cf77a354d111aa1cd132e99e0036[m
+Author: unknown <labkomunila2024@gmail.com>
+Date:   Fri May 17 07:02:14 2024 +0700
+
+    update 3
+
+[33mcommit 25c583ec42fcf53b0ffaa2e004cd2514e3f8fc1c[m
+Author: unknown <labkomunila2024@gmail.com>
+Date:   Fri May 17 06:29:56 2024 +0700
+
+    update 2
+
+[33mcommit 8ae8815f0fb528e001799996bb6321b9d64e5635[m
+Author: unknown <labkomunila2024@gmail.com>
+Date:   Thu May 16 16:22:47 2024 +0700
+
+    update 1
+
+[33mcommit b3de2aa408deaf7dc25a5949741d1f14fa28d9f2[m
+Author: unknown <labkomunila2024@gmail.com>
+Date:   Thu May 16 12:46:42 2024 +0700
+
+    tambah route
+
+[33mcommit 92587d5523e615fff12a8ecf29e81cbc14c1a8b0[m
+Author: iyos sianipar <your_email@example.com>
+Date:   Thu May 16 11:57:13 2024 +0700
+
+    Initial commit
+
+[33mcommit 3ddf95c6efd348ff8e61b8c0092771ad0f25e906[m
+Author: iyos sianipar <your_email@example.com>
+Date:   Thu May 16 11:50:54 2024 +0700
+
+    first commit
