@@ -5,9 +5,15 @@
 body {
     color: black;
     background:white;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Roboto', sans-serif;
+    /* font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     /* background-image: repeating-linear-gradient(135deg, rgba(180,166,166, 0.1) 0px, rgba(180,166,166, 0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));;} */
 }
 p {
     margin-bottom: 1em;
+}
+@layer components {
+    .dark-mode {
+        @apply dark;
+    }
 }

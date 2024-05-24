@@ -1,11 +1,11 @@
-<div class="bg-teal-200 ">
+<div class="bg-sky-950 sticky top-0 z-50">
     <div class="navbar  md:w-[70%] mx-auto md:pt-4 bgs-red-400">
         <div class="navbar-start bg-sblack">
             <div class="dropdown">
                 <div id="menu-button" tabindex="0" role="button" class="btn btn-ghost lg:hidden"
                     data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
                     aria-controls="drawer-navigation" onclick="toggleMenu()">
-                    <svg id="icon-hamburger"  class="h-5 w-5" fill="none"
+                    <svg id="icon-hamburger"  class="h-5 w-5 text-white" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h8m-8 6h16" />
@@ -17,10 +17,10 @@
                     </svg>
                 </div>
                 <div id="drawer-navigation"
-                    class="fixed top-0 left-0 z-50 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white dark:bg-gray-800"
+                    class="fixed top-0 left-0 z-50 w-screen h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white dark:bg-gray-800"
                     tabindex="-1" aria-labelledby="drawer-navigation-label">
                     <h5 id="drawer-navigation-label"
-                        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+                        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400 ">Menu</h5>
                     <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
                         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
@@ -57,8 +57,8 @@
                                         <path
                                             d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                                     </svg>
-                                    <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
-                                    <a href="/">Subscribe</a>
+
+                                    <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
 
                                 </a>
                             </li>
@@ -72,8 +72,7 @@
                                             d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
                                     </svg>
                                     <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
-                                    <a href="/index">Post</a>
-                                    <a href="/kategori">Kategori</a>
+
                                 </a>
                             </li>
 
@@ -82,10 +81,10 @@
                 </div>
 
             </div>
-            <a href="/"><img class="w-24" src="https://lampung.rilis.id/image/logoRilislampung.png"
+            <a href="/"><img class="w-24 hadow-sm " src="https://lampung.rilis.id/image/logoRilislampung.png"
                     alt=""></a>
         </div>
-        <div class="navbar-center hidden bg-oransge-900 z-50  lg:flex text-black">
+        <div class="navbar-center hidden bg-oransge-900 z-50  lg:flex text-white">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btns m-1 flex items-center "> <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"  width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 4h12M6 4v16M6 4H5m13 0v16m0-16h1m-1 16H6m12 0h1M6 20H5M9 7h1v1H9V7Zm5 0h1v1h-1V7Zm-5 4h1v1H9v-1Zm5 0h1v1h-1v-1Zm-3 4h2a1 1 0 0 1 1 1v4h-4v-4a1 1 0 0 1 1-1Z"/>
@@ -96,12 +95,12 @@
                 </ul>
               </div>
             <ul class="menu menu-horizontal px-1 text-lg items-center gap-4 z-50">
-               
+
                 <li><a href="/">Subscribe</a></li>
                 <li><a href="/index">Post</a></li>
                 <li><a href="/kategori">Kategori</a></li>
             </ul>
-            
+
         </div>
         <div class="navbar-end bg-blsack items-center justify-center ptS-4 m-3s ">
 
@@ -114,7 +113,7 @@
                         class="inline-flex items-center gap-2 bg-green-700 text-white text-lg font-semibold py-3 px-6 rounded-r-md">
 
                         <span class=" md:block">
-                            <svg class="text-gray-200 h-5 w-5 p-0 fill-current" 
+                            <svg class="text-gray-200 h-5 w-5 p-0 fill-current"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
                                 viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
                                 xml:space="preserve" width="512px" height="512px">
@@ -132,7 +131,7 @@
 </div>
 
 <script>
-    
+
     function toggleMenu() {
         const menuButton = document.getElementById('menu-button');
         const iconHamburger = document.getElementById('icon-hamburger');

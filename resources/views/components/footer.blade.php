@@ -1,23 +1,23 @@
 <footer class="w-full py-14">
     <div class="mx-auto  px-4 sm:px-6 lg:px-8">
         <div class="border-b border-gray-200 pb-14 flex justify-between items-center flex-col gap-8 lg:gap-0 lg:flex-row">
-     
+
             <div class="block">
                 <h3 class="font-manrope text-3xl text-gray-900 font-bold mb-2 text-center lg:text-left">Rilis</h3>
                 <p class="text-gray-500 text-center lg:text-left">Stay up to date with the latest update and announcement.</p>
             </div>
-            
-            <div class=" bg-white shadow-lg p-4 w-full lg:w-auto flex items-center flex-col gap-4 lg:flex-row">
+
+            <div class=" bg-white shasdow-lg p-4 w-full lg:w-auto flex items-center flex-col gap-4 lg:flex-row">
                 <button class="h-14 py-3.5 px-7 bg-indigo-600 shadow-sm rounded-full text-white font-bold">Subscribe</button>
             </div>
         </div>
         <!--Grid-->
         <div class="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
-            <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-               <img class="w-32" src="https://lampung.rilis.id/image/logoRilislampung.png" alt="">
+            <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0 ">
+               <img class="w-32 md:mx-0 mx-auto" src="https://lampung.rilis.id/image/logoRilislampung.png" alt="">
                 <p class="py-8 text-gray-500 lg:max-w-xs text-center lg:text-left">Jl. Sisingamangaraja Lk.II RT. 003 RW.05 Kel. Kelapa Tiga Permai, Kelapa Tiga, Tanjungkarang Barat, Bandar Lampung City, Lampung 35119</p>
-            
-                
+
+
             </div>
             <!--End Col-->
             <div class="lg:mx-auto text-left ">
@@ -44,7 +44,7 @@
             <!--End Col-->
             <div class="lg:mx-auto text-left ">
                 <h4 class="text-lg text-gray-900 font-medium mb-7">Resources</h4>
-             
+
                 <ul class="text-sm  transition-all duration-500">
                     <li class="mb-6"><a href="javascript:;"  class="text-gray-600 whitespace-nowrap hover:text-gray-900">Customer Support</a></li>
                     <li class="mb-6"><a href="javascript:;"  class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Cookies</a></li>

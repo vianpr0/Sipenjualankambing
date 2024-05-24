@@ -21,7 +21,7 @@ class ArtikelLayout extends Controller
 
     // Method untuk menampilkan daftar artikel dengan fitur pencarian dan paginasi
     public function post()
-    {  
+    {
         $articles = Article::latest()
             ->filters(request(['search']))
             ->paginate(5);
@@ -36,10 +36,10 @@ class ArtikelLayout extends Controller
     public function posts($id)
     {
         $post = Article::find($id); // Menggunakan findOrFail untuk menangani jika ID tidak ditemukan
-        
+
         // Memecah isi artikel menjadi paragraf-paragraf
         $paragraphs = preg_split('/<\/p>/', $post->Isi_Article, -1, PREG_SPLIT_NO_EMPTY);
-        
+
         if (!empty($paragraphs)) {
             // Menyisipkan teks ke dalam paragraf pertama
             $firstParagraph = '<p><span class="kota font-bold">RILISID, ' . $post->Kota . ' &mdash;</span>' . $paragraphs[0];
@@ -60,12 +60,12 @@ class ArtikelLayout extends Controller
     // Method untuk menangani pencarian (tambah logika pencarian sesuai kebutuhan)
     public function search()
     {
-        // 
+        //
     }
 
     // Method untuk menampilkan halaman home dengan hasil pencarian
     public function home()
-    {       
+    {
         $searchResults = Article::latest()
             ->filters(request(['search']))
             ->paginate(5);
