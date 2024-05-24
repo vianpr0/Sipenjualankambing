@@ -5,8 +5,8 @@
     <div class="">
         <div class="md:grid  md:grid-cols-5 gap-2 ">
             @foreach ($posts as $post)
-                <div class="card w-full rounded-none shadow-green-200 shadow-lg text-center ">
-                    <figure><a href="/index/berita/{{ $post['Url'] }}"> <img class="md:h-40 md:w-full"
+                <div class="card w-full rounded-none shadow-gresen-200 shadow-lg text-center ">
+                    <figure><a href="/index/berita/{{ $post['Url'] }}"> <img class="md:h-32 md:w-full"
                                 src={{ $post->Image }} alt="Shoes" /></figure>
                     <div class="mt-2 ">
 
@@ -173,7 +173,7 @@
                     <!-- article - start -->
                     <a href="#"
                         class="group relative flex h-48 flex-col overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64 xl:h-96">
-                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+                        <img src={{ $post->Image }}
                             loading="lazy" alt="Photo by Minh Pham"
                             class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
