@@ -7,12 +7,19 @@ use App\Models\Section;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class Navbar extends Component
+class Categorycom extends Component
 {
+    /**
+     * Create a new component instance.
+     * 
+     */
     public $sections;
+
     public function __construct()
     {
-        $this->sections = Section::all();
+        //
+        // public $sections;
+         $this->sections = Section::all();
     }
 
     /**
@@ -20,6 +27,9 @@ class Navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.navbar');
+   
+        return view('components.categorycom' , [
+            'sections' => $this->sections,
+        ] );
     }
 }

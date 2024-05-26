@@ -1,5 +1,5 @@
 <div class="bg-sky-950 sticky top-0 z-50">
-    <div class="navbar  md:w-[70%] mx-auto md:pt-4 bgs-red-400">
+    <div class="navbar  md:w-[72%] mx-auto md:pt-4 bgs-red-400">
         <div class="navbar-start bg-sblack">
             <div class="dropdown">
                 <div id="menu-button" tabindex="0" role="button" class="btn btn-ghost lg:hidden"
@@ -97,8 +97,7 @@
             <ul class="menu menu-horizontal px-1 text-lg items-center gap-4 z-50">
 
                 <li><a href="/">Subscribe</a></li>
-                <li><a href="/index">Post</a></li>
-                <li><a href="/kategori">Kategori</a></li>
+                <li><a href="/index">Index</a></li
             </ul>
 
         </div>

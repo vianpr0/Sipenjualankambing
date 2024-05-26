@@ -1,16 +1,16 @@
-<div class=" flex flex-col w-[9A0%] mx-auto">
+<div class=" flex flex-col w-[90%] md:w-full rounded-sm mx-auto">
     <div class="divider divider-info text-2xl p-9">Berita Terbaru</div>
 
 
     <div class="">
         <div class="md:grid  md:grid-cols-5 gap-2 ">
             @foreach ($posts as $post)
-                <div class="card w-full rounded-none shadow-gresen-200 shadow-lg text-center ">
-                    <figure><a href="/index/berita/{{ $post['Url'] }}"> <img class="md:h-32 md:w-full"
+                <div class="card w-full rounded-lg shadow-gresen-200 shadow-lg md:text-center ">
+                    <figure><a href="/index/berita/{{ $post->Url }}"> <img class="md:h-32 md:w-full"
                                 src={{ $post->Image }} alt="Shoes" /></figure>
                     <div class="mt-2 ">
 
-                        <p class="p-3">{{ Str::limit($post->Nama_Article, 40) }}</p></a>
+                        <p class="p-3 md:text-xs/[11px]">{{ Str::limit($post->Nama_Article, 90) }}</p></a>
 
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             <div id="indicators-carousel" class="relative w-full" data-carousel="static">
                 <div class="">
                     <div class="divider divider-success divider-start text-2xl mb-9 mt-9"> <button
-                            class="bg-red-500">Pilihan</button> </div>
+                            class="bg-sred-500">Pilihan</button> </div>
                     <div class="carousel w-full h-96">
                         <div id="controls-carousel" class="relative w-full" data-carousel="static">
                             <div class="relative h-56 overflow-hidden rounded-none md:h-96">
@@ -94,7 +94,7 @@
         </div>
         <div class="bg-white py-6 sm:py-8 lg:py-12">
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-                <h2 class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">Collections</h2>
+                {{-- <h2 class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">Collections</h2> --}}
 
                 <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
                     <!-- product - start -->
@@ -173,8 +173,7 @@
                     <!-- article - start -->
                     <a href="#"
                         class="group relative flex h-48 flex-col overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64 xl:h-96">
-                        <img src={{ $post->Image }}
-                            loading="lazy" alt="Photo by Minh Pham"
+                        <img src={{ $post->Image }} loading="lazy" alt="Photo by Minh Pham"
                             class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div
@@ -410,7 +409,8 @@
                             future and create a life that you are truly happy with.</p>
                         <p class="pt-2 text-xs font-medium"><a href="#_" class="mr-1 underline">Mary Jane</a> ·
                             <span class="mx-1">April 17, 2021</span> · <span class="mx-1 text-gray-600">3 min.
-                                read</span></p>
+                                read</span>
+                        </p>
                     </div>
 
                     <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -427,7 +427,8 @@
                             yourself, you'll need to upgrade your life.</p>
                         <p class="pt-2 text-xs font-medium"><a href="#_" class="mr-1 underline">Fred Jones</a> ·
                             <span class="mx-1">April 10, 2021</span> · <span class="mx-1 text-gray-600">3 min.
-                                read</span></p>
+                                read</span>
+                        </p>
                     </div>
 
                     <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -501,3 +502,5 @@
                 </div>
             </div>
         </section>
+        {{-- <div class="divider divider-center divider-neutral">Berita Lain</div> --}}
+        <x-categorycom/>

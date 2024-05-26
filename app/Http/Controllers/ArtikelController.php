@@ -3,21 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Section;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
-class ArtikelLayout extends Controller
+class ArtikelController extends Controller
 {
-    // Method untuk menampilkan halaman home
-    public function index()
-    {
-        return view('home');
-    }
-
-    // Method untuk menampilkan halaman artikel
-    public function artikel()
-    {
-        return view('page.artikelLayout');
-    }
 
     // Method untuk menampilkan daftar artikel dengan fitur pencarian dan paginasi
     public function post()
@@ -35,13 +26,17 @@ class ArtikelLayout extends Controller
     // Method untuk menampilkan artikel berdasarkan ID dengan modifikasi paragraf pertama
     public function posts($id)
     {
-        $post = Article::find($id); // Menggunakan findOrFail untuk menangani jika ID tidak ditemukan
+        $post = Article::find($id); 
+        // Menggunakan findOrFail untuk menangani jika ID tidak ditemukan
 
         // Memecah isi artikel menjadi paragraf-paragraf
         $paragraphs = preg_split('/<\/p>/', $post->Isi_Article, -1, PREG_SPLIT_NO_EMPTY);
 
         if (!empty($paragraphs)) {
             // Menyisipkan teks ke dalam paragraf pertama
+            $publishedAt = Carbon::parse($post->published_at)
+                     ->setTimezone('Asia/Jakarta')
+                     ->translatedFormat('j F Y H:i');
             $firstParagraph = '<p><span class="kota font-bold">RILISID, ' . $post->Kota . ' &mdash;</span>' . $paragraphs[0];
             $firstParagraph = preg_replace('/<\/span><p>/', '</span> ', $firstParagraph);
             $paragraphs[0] = $firstParagraph;
@@ -49,18 +44,15 @@ class ArtikelLayout extends Controller
 
         // Menggabungkan kembali paragraf-paragraf menjadi satu string
         $modifiedContent = implode('</p>', $paragraphs);
+        $tags = explode(',', $post->Tag);
 
         // Mengirimkan konten yang sudah dimodifikasi ke view
         return view('page.posts', [
             'post' => $post,
-            'modifiedContent' => $modifiedContent
+            'modifiedContent' => $modifiedContent,
+            'published' => $publishedAt,
+            'tags' => $tags,
         ]);
-    }
-
-    // Method untuk menangani pencarian (tambah logika pencarian sesuai kebutuhan)
-    public function search()
-    {
-        //
     }
 
     // Method untuk menampilkan halaman home dengan hasil pencarian
@@ -69,10 +61,12 @@ class ArtikelLayout extends Controller
         $searchResults = Article::latest()
             ->filters(request(['search']))
             ->paginate(5);
+            
 
         return view('home', [
             'title' => 'Blog Post',
             'posts' => $searchResults
         ]);
     }
+ 
 }
