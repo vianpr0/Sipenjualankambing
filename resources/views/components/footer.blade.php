@@ -3,9 +3,9 @@
     <div class="mx-auto psx-4 sm:pxs-6 lg:px-s8">
         <!--Grid-->
         <div
-            class="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
+            class="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-5 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
             <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0 ">
-                <img class="w-32 md:mx-0 mx-auto" src="https://lampung.rilis.id/image/logoRilislampung.png"
+                <img class="w-32 md:mx-0 mx-auto" src="{{ asset('img/logoRilislampung.png') }}"
                     alt="">
                 <p class="py-8 text-gray-500 lg:max-w-xs text-center lg:text-left">Jl. Sisingamangaraja Lk.II RT. 003
                     RW.05 Kel. Kelapa Tiga Permai, Kelapa Tiga, Tanjungkarang Barat, Bandar Lampung City, Lampung 35119
@@ -14,61 +14,43 @@
 
             </div>
             <!--End Col-->
-            <div class="lg:mx-auto text-left ">
-                <h4 class="text-lg text-gray-900 font-medium mb-7">Pagedone</h4>
+            <div class="lg:mx-auto lg:col-spn-2 text-left ">
+                {{-- <h4 class="text-lg text-gray-900 font-medium mb-7">Pagedone</h4> --}}
                 <ul class="text-sm  transition-all duration-500">
-                    <li class="mb-6"><a href="javascript:;"
-                            class="text-gray-600 whitespace-nowrap hover:text-gray-900">Home</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">About</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Pricing</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Features</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Pro Version</a></li>
+                    <li class="mb-6"><a href="/Informasi/Platform" target="_blank"
+                            class="text-gray-600 whitespace-nowrap hover:text-gray-900">Platform</a></li>
+                 
+                    <li class="mb-6"><a href="/Informasi/Redaksi" target="_blank"
+                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Redaksi Lampung
+                        </a></li>
+                    <li class="mb-6"><a href="/Informasi/Kode-Etik" target="_blank"
+                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Kode Etik</a></li>
+                    <li class="mb-6"><a href="/Informasi/Karir" target="_blank"
+                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Karir</a></li>
                 </ul>
             </div>
             <!--End Col-->
             <div class="lg:mx-auto text-left ">
-                <h4 class="text-lg text-gray-900 font-medium mb-7">Products</h4>
+                {{-- <h4 class="text-lg text-gray-900 font-medium mb-7">Products</h4> --}}
                 <ul class="text-sm  transition-all duration-500">
-                    <li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Figma UI
-                            System</a></li>
-                    <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Icons
-                            Assets</a></li>
-                    <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Responsive
-                            Blocks</a></li>
-                    <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Components
-                            Library</a></li>
-                    <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Plugin
-                            Guide</a></li>
+                    <li class="mb-6"><a href="/Informasi/Media-Siber" target="_blank" class="text-gray-600 hover:text-gray-900">Pedoman Media Siber</a></li>
+                    <li class="mb-6"><a href="/Informasi/Verifikasi-Kominfo" target="_blank" class=" text-gray-600 hover:text-gray-900">Terverifikasi KOMINFO</a></li>
+                    <li class="mb-6"><a href="/Informasi/Kontak" target="_blank" class=" text-gray-600 hover:text-gray-900">Kontak</a></li>
+                    <li class="mb-6"><a href="/Informasi/Dewan-Pers" target="_blank" class=" text-gray-600 hover:text-gray-900">Terverifikasi Dewan Pers
+                            </a></li>
+                    <li class="mb-6"><a href="/Informasi/Disclaimer" target="_blank" class=" text-gray-600 hover:text-gray-900">Disclaimer
+                            </a></li>
                 </ul>
             </div>
             <!--End Col-->
-            <div class="lg:mx-auto text-left ">
-                <h4 class="text-lg text-gray-900 font-medium mb-7">Resources</h4>
-
-                <ul class="text-sm  transition-all duration-500">
-                    <li class="mb-6"><a href="javascript:;"
-                            class="text-gray-600 whitespace-nowrap hover:text-gray-900">Customer Support</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Cookies</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">License</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Terms & Conditions</a></li>
-                    <li class="mb-6"><a href="javascript:;"
-                            class=" text-gray-600 whitespace-nowrap hover:text-gray-900">Privacy Policy</a></li>
-                </ul>
-            </div>
+        
             <!--End Col-->
-            <div class="lg:mx-auto text-left ">
+            <div class="lg:mx-auto text-left  ">
                 <h4 class="text-lg text-gray-900 font-medium mb-7">Support</h4>
                 <ul class="text-sm  transition-all duration-500">
-                    <li class="mb-6"><a href="javascript:;"
+                    <li class="mb-6"><a href="javascript:;" target="_blank"
                             class="text-gray-600 whitespace-nowrap hover:text-gray-900">
-                        </a><img src="https://lampung.rilis.id/image/Terdaftarkominfo.png" alt=""></li>
+                        </a><img src="{{ asset('img/Terdaftarkominfo.png') }}" alt=""></li>
                 </ul>
             </div>
             <!--End Col-->

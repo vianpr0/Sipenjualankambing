@@ -8,6 +8,7 @@
     <title>{{ $title ?? 'RILIS ID - Lampung' }}</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -15,12 +16,13 @@
 <body>
     <main>
         <x-Navbar />
+        <div class="hidden lg:block"><x-categorycom /></div>
         <div class="W-full md:w-[70%] mx-auto">
-            <x-categorycom />
-
             {{ $slot }}
             <x-footer />
+        </div>
     </main>
+
 </body>
 
 </html>

@@ -2,13 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url('../../public/fonts/BebasKai.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url('../../public/fonts/Poppins-Light.ttf') format('truetype'); /* Add other formats as needed */
+    font-weight: 300; /* Optional: Specify font weight */
+    font-style: normal; /* Optional: Specify font style */
+  }
+
+  @font-face {
+    font-family: 'PoppinsBold';
+    src: url('../../public/fonts/Poppins-Bold.ttf') format('truetype'); /* Add other formats as needed */
+    font-weight: 300; /* Optional: Specify font weight */
+    font-style: normal; /* Optional: Specify font style */
+  }
+  @font-face {
+    font-family: 'PoppinssemiBold';
+    src: url('../../public/fonts/Poppins-SemiBold.ttf') format('truetype'); /* Add other formats as needed */
+    font-weight: 300; /* Optional: Specify font weight */
+    font-style: normal; /* Optional: Specify font style */
+  }
+
 body {
     color: black;
     background:white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PoppinssemiBold';
+    /* font-family: 'Roboto', sans-serif; */
     /* font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     /* background-image: repeating-linear-gradient(135deg, rgba(180,166,166, 0.1) 0px, rgba(180,166,166, 0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));;} */
 }
+
+
 p {
     margin-bottom: 1em;
 }

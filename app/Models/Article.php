@@ -6,21 +6,39 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Carbon\Carbon;
-
+use Conner\Tagging\Taggable;
+use Illuminate\Support\Facades\Cache;
 
 class Article extends Model
 {
+    use Taggable;
     use HasFactory;
-    public static function find($Url) {
-        
-        $post = Arr::first(static::all(), function($post) use ($Url) {
-            return $post['Url'] == $Url;
+    protected $primaryKey = 'article_id';
+
+    
+    protected static function booted()
+    {
+        static::saved(function ($article) {
+            // Hapus cache 'query' setiap kali artikel disimpan
+            Cache::forget('query');
         });
+
+        static::deleted(function ($article) {
+            // Hapus cache 'query' setiap kali artikel dihapus
+            Cache::forget('query');
+        });
+    }
+    public static function findByUrl($url) {
+        $post = static::where('Url', $url)->first();
+
         if (!$post) {
             abort(404);
         }
+
         return $post;
-    }   
+    }
+    
+
 
     public function user()
     {

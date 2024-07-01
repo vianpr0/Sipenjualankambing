@@ -3,17 +3,21 @@
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-80 overflow-hidden rounded-none md:h-96 lg:h-96">
-                @foreach ($posts as $post)
+                @foreach ($posts as $article)
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div class="relative w-full h-full">
-                            <img src="{{ $post->Image }}" class="absolute block w-full h-full object-cover" alt="...">
+                            <img loading="lazy" src="{{ $article->Image }}" class="absolute block w-full h-full object-cover" alt="...">
                             <div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-black to-transparent"></div>
-                            <a href="/index/berita/{{ $post['Url'] }}">
-                                <span class="absolute bottom-10 left-10 text-xl font-semibold text-white md:text-2xl">{!! $post->Nama_Article !!}</span>
-                            </a>
+                            <div class="absolute bottom-10 left-8 text-white">
+                                <h3 class="text-sm md:text-base">{{ date('l, d F Y', strtotime($article->published_at . ' Asia/Jakarta')) }}</h3>
+                                <a href="/{{ $article->section->Nama_Section }}/Berita/{{ $article->Url }}">
+                                    <span class="block text-xl font-semibold md:text-2xl">{!! $article->Nama_Article !!}</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
                 @endforeach
             </div>
             <!-- Slider indicators -->
@@ -42,7 +46,7 @@
         </div>
     </div>
     <div class="w-auto">
-        <img class="md:h-96 mt-4 md:mt-0 lg:mt-0 h-[90%] w-[90%]" src="https://lampung.rilis.id/image/2024/02/12BDm9Jza_quoterilislampung2024farizalsekprovlampung2024.jpg" alt="">
+        <img loading="lazy" class="md:h-96 mt-4 md:mt-0 lg:mt-0 h-[90%] w-[90%]" src="{{ $quote->first()->Image }}" alt="">
     </div>
 </div>
 
