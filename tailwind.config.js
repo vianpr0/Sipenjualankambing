@@ -9,8 +9,13 @@ export default {
   theme: {
     extend: {},
   },
+
   plugins: [
     require('flowbite/plugin'),
     require('daisyui'),
   ],
+  daisyui: {
+    themes: ["Default","Retro", "Cyberpunk", "cupcake", "dark", "Valentine"],
+  },
+
 }

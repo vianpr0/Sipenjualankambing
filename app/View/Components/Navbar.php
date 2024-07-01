@@ -3,17 +3,16 @@
 namespace App\View\Components;
 
 use Closure;
-use Illuminate\Contracts\View\View;
+use App\Models\Section;
 use Illuminate\View\Component;
+use Illuminate\Contracts\View\View;
 
 class Navbar extends Component
 {
-    /**
-     * Create a new component instance.
-     */
+    public $sections;
     public function __construct()
     {
-        //
+        $this->sections = Section::all();
     }
 
     /**

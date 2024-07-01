@@ -1,15 +1,24 @@
 <?php
 
-use App\Http\Controllers\ArtikelLayout;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\InformasiController;
 
 
 
-Route::get('/artikel' , [ArtikelLayout::class, 'artikel']);
-Route::get('/' , [ArtikelLayout::class, 'home']);
-Route::get('/index' , [ArtikelLayout::class, 'post']);
-Route::get('/index/berita/{posts}' , [ArtikelLayout::class, 'posts'])->name('page.posts');;
-Route::get('/kategori' , function () {
-    return view('page.category',['title' => 'kategory']);
-});
+Route::get('/artikel' , [ArtikelController::class, 'artikel']);
+Route::get('/' , [HomeController::class, 'index']);
+Route::get('/artikel' , [ArtikelController::class, 'post']);
+Route::get('/kategori' , [CategoryController::class , 'category'])->name('kategori.category');
+Route::get('/Kategori/{category}' , [CategoryController::class , 'categorys'])->name('kategori.categorys');
+
+Route::get('/index', [CategoryController::class, 'index'])->name('categories.index');
+Route::get('/index/{category}', [CategoryController::class, 'show'])->name('categories.show');
+Route::get('/index/Tag/{post}', [CategoryController::class, 'indextag'])->name('categories.indextag');
+Route::get('/{category}/Berita/{article}' , [ArtikelController::class, 'index'])->name('page.posts');
+Route::get('/Informasi/{post}', [InformasiController::class, 'showPage']);
+// Route::get('/informasi', [InformasiController::class, 'index']);
+
            
