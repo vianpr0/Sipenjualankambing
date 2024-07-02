@@ -1,15 +1,11 @@
-# Dockerfile
-
+# Gunakan image PHP resmi dengan versi yang sesuai
 FROM php:8.2-fpm
-
-# Set working directory
-WORKDIR /var/www
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     libpng-dev \
-    libjpeg62-turbo-dev \
+    libjpeg-dev \
     libfreetype6-dev \
     locales \
     zip \
@@ -17,25 +13,44 @@ RUN apt-get update && apt-get install -y \
     vim \
     unzip \
     git \
-    curl
+    curl \
+    libonig-dev
 
-# Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+# Install Node.js dan npm versi 20.13
 
-# Install extensions
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs
 
 # Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Copy existing application directory contents
-COPY . /var/www
+# Set working directory
+WORKDIR /var/www/rilispro
+
+# Copy Composer files
+COPY composer.* /var/www/rilispro/
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+
+# Install Composer dependencies
+RUN composer install --no-dev --no-scripts --no-autoloader
+
+# Copy application source
+COPY . /var/www/rilispro
+
+# Run composer again to generate optimized autoload files
+RUN composer dump-autoload --optimize
+
+# Copy package.json and package-lock.json
+COPY package.json package-lock.json ./
+
+# Install Node.js dependencies
+RUN npm install
 
 # Copy existing application directory permissions
-COPY --chown=www-data:www-data . /var/www
-
-# Change current user to www
-USER www-data
+COPY --chown=www-data:www-data . /var/www/rilispro
 
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
